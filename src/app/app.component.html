@@ -57,8 +57,17 @@
     <tr>
       <td>{{ nombreMal }}</td>
       <td>pipe personalizado (CapitalizadoPipe)</td>
-      <td>{{ fecha | capitalizado }}</td>
+      <td>{{ nombreMal }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre }}</td>
+      <td>contrasena:{{ activar }}<br><button class="btn btn-outline-primary" type="button" name="button" (click)="activar = !activar">activar/desactivar</button></td>
+      <td>{{ nombre | contrasena:activar }}</td>
     </tr>
   </tbody>
   </table>
+
+  <h4>Youtube <small>video <hr></small></h4>
+<iframe width="560" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allowfullscreen></iframe>
+
 </div>

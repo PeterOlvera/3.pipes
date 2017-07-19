@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CapitalizadoPipe implements PipeTransform {
 
-  transform(value: string = "", todas:boolean = true ): string { 
+  transform(value: string = "", todas:boolean = true ): string {
     value = value.toLowerCase();
 
     let nombres = value.split(" ");

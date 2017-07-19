@@ -32,4 +32,7 @@ export class AppComponent {
 
   nombreMal:string = "PeTeR olVera quiSILAY";
 
+  video="9KQ2YKHzSNE";
+
+  activar=true;
 }
